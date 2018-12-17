@@ -1,0 +1,28 @@
+.buttonStart{
+    -fx-background-color: white;
+    -fx-text-align: center;
+    -fx-text-fill: #3f6bb2;
+    -fx-text-decoration: none;
+    -fx-display: inline-block;
+    -fx-font-size: 35px;
+    -fx-margin: 4px 2px;   
+    -fx-padding: 16px; 
+    -fx-opacity: 1;
+    -fx-transition-property: opacity;
+    -fx-transition-duration:2s; 
+}
+
+.buttonStart:hover{
+    -fx-background-color: #3f6bb2;
+    -fx-text-fill: white;
+    -fx-text-align: center;
+    -fx-text-decoration: none;
+    -fx-display: inline-block;
+    -fx-font-size: 35px;
+    -fx-margin: 4px 2px;
+    -fx-padding: 16px; 
+    -fx-opacity: 0.6;
+   -fx-rotate: 10;
+}
+ 
+ 

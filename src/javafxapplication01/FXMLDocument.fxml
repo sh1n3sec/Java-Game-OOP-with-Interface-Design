@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" onMouseClicked="#rodarBotoes" prefHeight="820.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication01.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="824.0" fitWidth="1364.0" pickOnBounds="true">
+         <image>
+            <Image url="@../imagens/back2.jpg" />
+         </image>
+         <viewport>
+            <Rectangle2D height="795.0" width="1194.0" />
+         </viewport>
+      </ImageView>
+      <HBox layoutX="408.0" layoutY="156.0" prefHeight="824.0" prefWidth="1282.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="0.0">
+         <children>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="809.0" prefWidth="772.0">
+               <children>
+                  <GridPane fx:id="gridPane" layoutX="94.0" layoutY="170.0" prefHeight="624.0" prefWidth="621.0" stylesheets="@estilos.css" AnchorPane.bottomAnchor="33.0" AnchorPane.leftAnchor="94.0" AnchorPane.rightAnchor="57.0" AnchorPane.topAnchor="170.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                  </GridPane>
+                  <TitledPane fx:id="acabaGanhar" animated="false" layoutX="89.0" layoutY="170.0" prefHeight="621.0" prefWidth="637.0" text="Champions League">
+                     <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="485.0" prefWidth="651.0">
+                           <children>
+                              <Label fx:id="acabarJogo" alignment="CENTER" layoutX="-15.0" layoutY="142.0" prefHeight="110.0" prefWidth="664.0" text="Não existem mais jogadas Possiveis!">
+                                 <font>
+                                    <Font name="System Bold" size="36.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="botaoSimGanhar" layoutX="102.0" layoutY="383.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="127.0" prefWidth="167.0" text="Sim">
+                                 <font>
+                                    <Font size="40.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="botaoNaoGanhar" layoutX="369.0" layoutY="380.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="134.0" prefWidth="165.0" text="Não">
+                                 <font>
+                                    <Font size="40.0" />
+                                 </font>
+                              </Button>
+                              <Label fx:id="acabarJogo1" alignment="CENTER" layoutX="5.0" layoutY="224.0" prefHeight="110.0" prefWidth="617.0" text="Pretende recomeçar o Jogo?">
+                                 <font>
+                                    <Font name="System Bold" size="34.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="wonLabel" alignment="CENTER" layoutX="-11.0" layoutY="39.0" prefHeight="147.0" prefWidth="655.0" text="YOU WIN!" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="System Bold" size="96.0" />
+                                 </font>
+                                 <textFill>
+                                    <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                                       <stops>
+                                          <Stop color="#2c2c2c" />
+                                          <Stop color="#1ca104" offset="1.0" />
+                                       </stops>
+                                    </RadialGradient>
+                                 </textFill>
+                              </Label>
+                              <Label fx:id="overLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="-10.0" layoutY="49.0" prefHeight="116.0" prefWidth="655.0" text="GAME OVER!" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS">
+                                 <font>
+                                    <Font name="System Bold" size="96.0" />
+                                 </font>
+                                 <textFill>
+                                    <RadialGradient centerX="0.5277777777777778" centerY="0.5" radius="0.2906976744186046">
+                                       <stops>
+                                          <Stop color="BLACK" />
+                                          <Stop color="#790606" offset="1.0" />
+                                       </stops>
+                                    </RadialGradient>
+                                 </textFill>
+                              </Label>
+                              <Label fx:id="labelSairMesmo" alignment="CENTER" layoutX="-13.0" layoutY="177.0" prefHeight="50.0" prefWidth="661.0" text="Deseja sair do jogo?">
+                                 <font>
+                                    <Font size="62.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="botaoSimGanhar1" layoutX="102.0" layoutY="383.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="127.0" prefWidth="167.0" text="Sim">
+                                 <font>
+                                    <Font size="40.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="botaoNaoGanhar1" layoutX="369.0" layoutY="380.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="134.0" prefWidth="165.0" text="Não">
+                                 <font>
+                                    <Font size="40.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </TitledPane>
+                  <ImageView fitHeight="139.0" fitWidth="503.0" layoutX="153.0" layoutY="31.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../imagens/logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="815.0" prefWidth="517.0">
+               <children>
+                  <VBox layoutX="9.0" prefHeight="781.0" prefWidth="491.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="815.0" prefWidth="499.0">
+                           <children>
+                              <ImageView fitHeight="753.0" fitWidth="468.0" layoutX="31.0" layoutY="40.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../imagens/score.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="68.0" fitWidth="132.0" layoutX="201.0" layoutY="657.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../imagens/botaosair.png" />
+                                 </image>
+                              </ImageView>
+                              <Label alignment="CENTER" layoutX="160.0" layoutY="173.0" prefHeight="96.0" prefWidth="206.0" text="SCORE">
+                                 <font>
+                                    <Font name="Lato Black" size="67.0" />
+                                 </font>
+                                 <textFill>
+                                    <RadialGradient centerX="0.4833333333333334" centerY="0.5" focusDistance="-0.06976744186046502" radius="0.7093023255813954">
+                                       <stops>
+                                          <Stop color="#397ed3" />
+                                          <Stop color="BLACK" offset="0.8865979381443299" />
+                                          <Stop color="BLACK" offset="1.0" />
+                                       </stops>
+                                    </RadialGradient>
+                                 </textFill>
+                              </Label>
+                              <Button fx:id="buttonSair" layoutX="201.0" layoutY="657.0" mnemonicParsing="false" onAction="#handleButtonAction" opacity="0.0" prefHeight="44.0" prefWidth="132.0">
+                                 <font>
+                                    <Font name="Lato Black" size="31.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="buttonHint" layoutX="199.0" layoutY="449.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="59.0" prefWidth="132.0" stylesheets="@estilos.css" text="HINT">
+                                 <font>
+                                    <Font name="Lato Black" size="28.0" />
+                                 </font>
+                                 <textFill>
+                                    <RadialGradient centerX="0.48888888888888893" centerY="0.4714285714285714" radius="0.6511627906976745">
+                                       <stops>
+                                          <Stop color="#f9ff03" />
+                                          <Stop color="#0bff05" offset="0.007662835249042145" />
+                                          <Stop color="BLACK" offset="0.8865979381443299" />
+                                          <Stop color="BLACK" offset="1.0" />
+                                       </stops>
+                                    </RadialGradient>
+                                 </textFill>
+                              </Button>
+                              <Label fx:id="scoreBar" alignment="CENTER" layoutX="197.0" layoutY="272.0" onContextMenuRequested="#handleButtonAction" prefHeight="57.0" prefWidth="132.0" text="0">
+                                 <font>
+                                    <Font name="System Bold" size="36.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="labelJogadas" alignment="CENTER" layoutX="73.0" layoutY="523.0" onContextMenuRequested="#handleButtonAction" prefHeight="44.0" prefWidth="384.0" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="77.0" layoutY="306.0" prefHeight="59.0" prefWidth="376.0" text="Faça 10000 de score para ganhar!" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                                 <font>
+                                    <Font name="System Bold" size="23.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="hintOverLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="73.0" layoutY="524.0" opacity="0.0" prefHeight="44.0" prefWidth="384.0" text="Só pode usar uma Hint por Jogada!" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" layoutX="59.0" layoutY="363.0" prefHeight="17.0" prefWidth="413.0" text="Só tem 5 Hints por Jogo!">
+                                 <font>
+                                    <Font name="System Bold" size="21.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="hintLabel" alignment="CENTER" layoutX="73.0" layoutY="399.0" prefHeight="44.0" prefWidth="384.0">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="finalButon" layoutX="201.0" layoutY="574.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="59.0" prefWidth="132.0" text="?">
+                                 <font>
+                                    <Font name="Lato Black" size="28.0" />
+                                 </font>
+                              </Button>
+                              <ImageView fx:id="imgVol" fitHeight="59.0" fitWidth="59.0" layoutX="63.0" layoutY="721.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../imagens/volum.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="imgMute" fitHeight="49.0" fitWidth="53.0" layoutX="68.0" layoutY="724.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                 <image>
+                                    <Image url="@../imagens/voldown.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="buttonSom" layoutX="59.0" layoutY="716.0" mnemonicParsing="false" onAction="#handleButtonAction" opacity="0.0" prefHeight="66.0" prefWidth="68.0" />
+                              <ImageView fx:id="imgVol1" fitHeight="53.0" fitWidth="53.0" layoutX="132.0" layoutY="725.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../imagens/music.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="imgMute1" fitHeight="56.0" fitWidth="54.0" layoutX="132.0" layoutY="723.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                 <image>
+                                    <Image url="@../imagens/voldown.png" />
+                                 </image>
+                              </ImageView>
+                              <Button fx:id="buttonSom1" layoutX="132.0" layoutY="728.0" mnemonicParsing="false" onAction="#handleButtonAction" opacity="0.0" prefHeight="48.0" prefWidth="53.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <ImageView fx:id="imgstart" fitHeight="824.0" fitWidth="1373.0" layoutX="-9.0" pickOnBounds="true">
+         <image>
+            <Image url="@../imagens/back1.png" />
+         </image>
+      </ImageView>
+      <Button id="buttonStart" fx:id="buttonStart" defaultButton="true" layoutX="493.0" layoutY="643.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="65.0" prefWidth="365.0" styleClass="buttonStart" stylesheets="@estilos.css" text="Click Para Começar" textAlignment="CENTER" textFill="#2644a8" textOverrun="WORD_ELLIPSIS" wrapText="true">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+   </children>
+</AnchorPane>
