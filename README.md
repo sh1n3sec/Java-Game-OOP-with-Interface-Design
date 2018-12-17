@@ -3,7 +3,8 @@ A CandyCrush type game with Java OOP and Interface Design (JavaFX) with Soccer a
 
 =================================================================================
 Basic game with Java OOP and Interface Design, where the theme is Soccer and as sound effects and movement effects.
-
 There are 3 .png files in the main folder with screenshots of the actual game running, with some different moments of the gameplay.
+
+Project made by Pedro Gomes and Pedro Alves, ISMT 2017
 
 =================================================================================
