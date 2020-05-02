@@ -11,5 +11,5 @@ There are 3 .png files in the main folder with screenshots of the actual game ru
 
 ---
 
-Made by Pedro Gomes, 2017/2018
+Made by Pedro Gomes, 2017
 
