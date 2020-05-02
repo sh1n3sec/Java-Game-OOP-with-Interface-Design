@@ -3,10 +3,10 @@
 
 =================================================================================
 
-  	•	Java OOP and Interface Design, where the theme is Soccer and has music and movement effects.
+Java OOP and Interface Design, where the theme is Soccer and has music and movement effects.
 
-  	•	There are 3 .png files in the main folder with screenshots of the actual game running, with some different moments of the gameplay.
+There are 3 .png files in the main folder with screenshots of the actual game running, with some different moments of the gameplay.
 
-  	•	Project made by Pedro Gomes and Pedro Alves, 2017/2018
 
+Project made by Pedro Gomes and Pedro Alves, 2017/2018
 =================================================================================
