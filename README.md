@@ -5,7 +5,7 @@ Java OOP and Interface Design, where the theme is Soccer and has music and movem
 
 There are 3 .png files in the main folder with screenshots of the actual game running, with some different moments of the gameplay.
 
-![GitHub Logo](Java-Game-OOP-with-Interface-Design/Game.png)
+![GitHub Logo](Game.png)
 Format: ![Alt Text](url)
 
 Project made by Pedro Gomes and Pedro Alves, 2017/2018
